@@ -71,14 +71,23 @@ const strivify = function(inputString){
 Write a function "check3and7" which accepts a positive number and check if it is a multiple of 3 or a multiple of 7.
 HINT: Module Operator
 */
+const check3and7 = function(givenNumber)
+
 
 /* WRITE YOUR CODE HERE */
 
 /* EXERCISE 7
 Write a function "reverseString" to programmatically reverse a given string (es.: Strive => evirtS).
 */
+const reverseString = function(str){
+    let newString = ""
+    for (let i = str.length - 1; i >= 0; i--) {
+        newString += str[i];
+    }
+    return newString;
+}
+console.log(reverseString(Strive))
 
-/* WRITE YOUR CODE HERE */
 
 /* EXERCISE 8
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as a parameter.
