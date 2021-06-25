@@ -60,11 +60,13 @@ Write a function "strivify" which accepts a string.
 It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
 */
 const strivify = function(inputString){
-    if (inputString.slice(0,6) === "Strive"){
+    let outputString = inputString.slice(0,6)
+    if (outputString === "Strive"){
         return inputString;
     }else {return "Strive" + inputString}
 }
-console.log(strivify(life))
+
+
 /* EXERCISE 6
 Write a function "check3and7" which accepts a positive number and check if it is a multiple of 3 or a multiple of 7.
 HINT: Module Operator
