@@ -9,8 +9,8 @@ ASSIGNMENT RULES
 /* EXERCISE 1
 Write a function "area" which receives 2 parameters (l1,l2) and calculates the area of the associated rectangle.
 */
-const rectangleArea = function(length,width){
-    let area = length * width;
+const rectangleArea = function(l1,l2){
+    let area = l1 * l2
     return area
 }
  console.log(rectangleArea(11,12))
@@ -59,9 +59,12 @@ const boundary = function(n) {
 Write a function "strivify" which accepts a string.
 It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
 */
-
-/* WRITE YOUR CODE HERE */
-
+const strivify = function(inputString){
+    if (inputString.slice(0,6) === "Strive"){
+        return inputString;
+    }else {return "Strive" + inputString}
+}
+console.log(strivify(life))
 /* EXERCISE 6
 Write a function "check3and7" which accepts a positive number and check if it is a multiple of 3 or a multiple of 7.
 HINT: Module Operator
